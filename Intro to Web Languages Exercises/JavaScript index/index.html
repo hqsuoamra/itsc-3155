@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <! -- promt the user to enter name and assign the input to the id variable. set the type of the input. Print a placeholder "Enter your name" -- >
+    <input id="name-input" type="text" placeholder="Enter your name" />
+    <! -- initilize the button and print "Click Me" on top of the button -- >
+    <button id="my-button">Click Me</button>
+    <! -- start the javaScript script -- >
+    <script>
+    // assigning values to variable myButton of a querySelector function with a data type of document
+        var myButton = document.querySelector('#my-button');
+    // assigning values to nameInput of a querySelector function with a data type of document
+        var nameInput = document.querySelector('#name-input');
+    //call the click function and set an if statement so if the input is not empty prints "Hello" followed by the input value
+        myButton.addEventListener('click', function () {
+            if (nameInput.value !== '') {
+                alert('Hello ' + nameInput.value);
+            }
+        });
+    // End of script
+    </script>
+</body>
+</html>
